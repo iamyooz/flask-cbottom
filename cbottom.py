@@ -23,7 +23,7 @@ def load_scaler_and_data():
         scaler = StandardScaler()
         scaler.fit(temperature_data)
 
-@app.route('/cbttom', methods=['POST'])
+@app.route('/cbottom', methods=['POST'])
 @cross_origin()
 def get_cluster_images():
     global scaler, learning_data
